@@ -31,5 +31,4 @@ Thumbs.db
 # App runtime (local predictions); do not push user data
 diabetes-risk-predictor/backend/data/predictions.db
 
-# Model files: intentionally NOT ignored so best_diabetes_pipeline.joblib can be pushed.
-# If a file exceeds ~100 MB, use Git LFS: git lfs track "*.joblib"
+# Trained model binaries: tracked with Git LFS (see .gitattributes), not listed here.
