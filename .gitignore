@@ -1,0 +1,35 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+**/node_modules/
+
+# Builds
+dist/
+**/dist/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# notebooks / local
+*.ipynb_checkpoints
+
+# App runtime (local predictions); do not push user data
+diabetes-risk-predictor/backend/data/predictions.db
+
+# Model files: intentionally NOT ignored so best_diabetes_pipeline.joblib can be pushed.
+# If a file exceeds ~100 MB, use Git LFS: git lfs track "*.joblib"
